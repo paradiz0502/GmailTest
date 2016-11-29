@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Gmail">
+    <test name="FirstTaskTest">
+        <classes>
+            <class name="com.nikitchuk.gmail.test.GmailTestSuit"/>
+            <methods>
+                <include name="loginTest" />
+                <!--<include name="messageDraftSentTest" />-->
+
+
+            </methods>
+        </classes>
+        <!--
+             <class name="com.nikitchuk.gmail.test.GmailTestSuit        </classes>-->
+    </test>
+
+
+
+</suite>
