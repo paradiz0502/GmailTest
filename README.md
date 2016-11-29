@@ -1,11 +1,15 @@
 # GmailTestFramework
 Gmail testing framework based on:
+
 Tool to automate web browsers:
 - Selenium WebDriver
+
 Test tool:
 - TestNG
+
 Report tool:
 - log4j
+
 Build tool:
 - Maven
 
