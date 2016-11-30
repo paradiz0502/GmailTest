@@ -17,11 +17,6 @@ public class SentMessage extends MainPage {
     }
 
     public void deleteLastMessage() {
-        try {
-            sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         Map.getLastMessageSubject().click();
         Map.getDeleteButton().click();
         log.info("Message has been deleted");

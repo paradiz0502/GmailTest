@@ -50,26 +50,6 @@ public class GmailTestSuit {
         }
     }
 
-    @Test
-    public void failTest() {
-        log.error("Problem - ERROR");
-        Assert.fail("problems");
-    }
-
-    @Test
-    public void logVariantsTest() {
-        log.error("Problem - ERROR");
-        log.error("Problem - ERROR");
-        log.error("Problem - ERROR");
-        log.info("Problem - Info");
-        log.info("Problem - Info");
-        log.warn("Problem - Warning");
-        log.debug("Problem - Debug");
-
-    }
-
-
-
 
 
 }
