@@ -17,14 +17,13 @@ public class SentMessage extends MainPage {
     }
 
     public void deleteLastMessage() {
-        Map.getLastMessageCheck().click();
-        Map.getDeleteButton().click();
-        Map.getConfirmDeleteButton().click();
         try {
-            sleep(2000);
+            sleep(5000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+        Map.getLastMessageSubject().click();
+        Map.getDeleteButton().click();
         log.info("Message has been deleted");
 
     }

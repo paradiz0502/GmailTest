@@ -7,6 +7,8 @@ import pages.POSentMessage.SentMessage;
 import utils.DriverManager;
 import utils.PageProvider;
 
+import static java.lang.Thread.sleep;
+
 /**
  * Created by nykytchuk on 28/11/2016.
  */
@@ -22,6 +24,11 @@ public class MainPage {
 
     public SentMessage goToSentMessagePage() {
         Map.getSentPageLink().click();
+        try {
+            sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         return page.SentMessagePage();
     }
 

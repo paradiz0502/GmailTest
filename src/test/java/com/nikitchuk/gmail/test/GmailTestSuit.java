@@ -1,10 +1,13 @@
 package com.nikitchuk.gmail.test;
 import org.apache.log4j.Logger;
+import org.junit.Assert;
 import org.testng.annotations.*;
 import utils.DriverManager;
 import utils.PageProvider;
 import utils.XMLDataProvider;
 
+
+//@Listeners({ReportPortalTestNGListener.class})
 public class GmailTestSuit {
 
     private final static Logger log = Logger.getLogger(GmailTestSuit.class);
@@ -46,4 +49,27 @@ public class GmailTestSuit {
             page.SentMessagePage().deleteLastMessage();
         }
     }
+
+    @Test
+    public void failTest() {
+        log.error("Problem - ERROR");
+        Assert.fail("problems");
+    }
+
+    @Test
+    public void logVariantsTest() {
+        log.error("Problem - ERROR");
+        log.error("Problem - ERROR");
+        log.error("Problem - ERROR");
+        log.info("Problem - Info");
+        log.info("Problem - Info");
+        log.warn("Problem - Warning");
+        log.debug("Problem - Debug");
+
+    }
+
+
+
+
+
 }

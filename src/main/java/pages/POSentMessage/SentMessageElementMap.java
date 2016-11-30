@@ -27,7 +27,7 @@ public class SentMessageElementMap extends MainPageElementMap {
     }
     public WebElement getDeleteButton(){
         List<WebElement> panelElements  = driver.findElements(By.xpath("//div[@class='ar9 T-I-J3 J-J5-Ji']"));
-        return panelElements.get(1);
+        return panelElements.get(2);
     }
 
 }
